@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		border: 0;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	a{
+		text-decoration: none;
+		display: block;
+	}
+	section{
+		width: 1226px;
+		height: 460px;
+		background-color: yellow;
+		margin: 0 auto;
+		margin-top: 100px;
+		position: relative;
+		top:0;
+		
+	}
+	section .box{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.box li{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.bos{
+		width: 210px;
+		height: 20px;
+		/*background-color: blueviolet;*/
+		border-radius: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
+	.bos li{
+		width: 20px;
+		height: 20px;
+		background-color: bisque;
+		border-radius: 50%;
+	}
+	.bos .lunbodian{
+		background-color: aqua;
+	}
+	.bon{
+		width: 234px;
+		height: 460px;
+		background-color: rgba(0,0,0,.3);
+		padding: 20px 0;
+		box-sizing: border-box;
+		position: absolute;
+		top:0;
+	}
+	.bon .left{
+		width: 100%;
+		height: 42px;
+		/*background-color: aquamarine;*/
+		line-height: 42px;
+		font-size: 16px;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	.bon a{
+		color: #FFF;
+	}
+	.bon .left:hover{
+		background-color: #ffba26;
+	}
+	.bon .left span:nth-child(2){
+		float: right;
+	}
+	.bon .left .left-1{
+		width: 992px;
+		height: 100%;
+		background-color: #FFF;
+		border:1px solid #CCC;
+		position: absolute;
+		left: 234px;
+		top:0;
+		display: none;
+	}
+	.left-1 ul{
+		width: 247px;
+		height: 100%;
+		border-right: 1px solid #CCC;
+		float: left;
+	}
+	.left ul li{
+		width: 100%;
+		height: 50px;
+		margin-top: 20px;
+	}
+	.left-1 img{
+		width: 40px;
+		height: 40px;
+		float: left;
+		margin: 10px 5px 0 10px;
+	}
+	.bon .left .left-1 span{
+		line-height: 50px;
+		font-size: 12px;
+		color: #333;
+		float: left;
+	}
+
+</style>
+<body>
+	<section>
+		<ul class="box">
+			<li class="top">
+				<a href="">
+					<img src="img/u.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/w.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/y.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/q.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/e.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/r.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/t.jpg" alt="">
+				</a>
+			</li>		
+		</ul>
+		<ul class="bos">
+			<li class="lunbodian"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ul class="bon">
+			<a href="">
+				<li class="left">
+					<span>手机 电话卡</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>笔记本</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>电视 盒子</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>路由器 智能硬件</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>移动电源 电池 插线板</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>耳机 音箱</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>保护套 贴膜</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>线材 支架 储存卡</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>箱包 服饰 鞋 眼镜</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</a>
+			<a href="">
+				<li class="left">
+					<span>米兔 生活周边</span>
+					<span> > </span>
+					<div class="left-1">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/tu1.png" alt="">
+									<span>小米MIX 2</span>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+				</li>
+			</a>
+		</ul>
+	</section>
+
+</body>
+</html>
+<script>
+//		轮播
+//		1、初始化
+//			*图片
+//		2、获取元素
+//			图片：box>li
+//			轮播点
+//			大盒子
+//		3、开启时间函数
+//			图片循环
+//		4、鼠标移入移出状态
+//			图片
+//		5、给图片当前状态下标
+//			大块盒子section
+		let wao = document.querySelectorAll('.box>li');
+		console.log(wao);
+		let lun = document.querySelectorAll('.bos>li');
+		console.log(lun);
+		let biao = document.getElementsByTagName('section')[0];
+		console.log(biao);
+		let t = 0;
+		let han = setInterval(function(){
+			if(t == wao.length){
+				t = 0;
+			}
+			for(let i = 0;i < wao.length;i++){
+                lun[i].style.backgroundColor= 'aqua';
+				wao[i].style.opacity=0;
+			}
+            lun[t].style.backgroundColor= 'bisque';
+			wao[t].style.opacity=1;
+			t++;
+		},1000)
+		biao.onmousemove=function () {
+			clearInterval(han);
+        }
+        biao.onmouseout=function () {
+			han = setInterval(function(){
+                if(t == wao.length){
+                    t = 0;
+                }
+                for(let i = 0;i < wao.length;i++){
+                    lun[i].style.backgroundColor= 'aqua';
+                    wao[i].style.opacity=0;
+                }
+                lun[t].style.backgroundColor= 'bisque';
+                wao[t].style.opacity=1;
+                t++;
+            },1000)
+        }
+
+
+//        侧导航
+//		1、初始化
+//		2、获取元素
+//			*标题：left
+//			*卡片:left-1
+//		3、遍历标记
+//			移入移出
+		let dao = document.getElementsByClassName('left');
+		console.log(dao);
+		let hang = document.getElementsByClassName('left-1');
+		console.log(hang);
+		for(let i = 0;i < dao.length;i++){
+		    dao[i].onmousemove=function () {
+				hang[i].style.display='block';
+            }
+            dao[i].onmouseout=function () {
+				hang[i].style.display='none';
+            }
+		}
+</script>
